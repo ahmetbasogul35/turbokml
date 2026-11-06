@@ -1,24 +1,38 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TurboKML – Gizlilik Politikası ve Kullanım Koşulları / Privacy Policy and Terms</title>
+<title>TurboKML – Privacy Policy and Terms</title>
 <style>
-  body { margin:0; background:#FFF8F1; color:#1E2328; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
-  main { max-width:720px; margin:0 auto; padding:24px 16px 48px; }
-  h1 { font-size:24px; margin:8px 0 4px; }
+  :root { --bg:#FFF8F1; --text:#1E2328; --muted:#6B7177; --line:#EADBCB; --chip:#F3E7DA; --accent:#F26A21; --onAccent:#FFFFFF; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#16191C; --text:#ECEEF0; --muted:#9AA1A8; --line:#2C3136; --chip:#23272B; --accent:#FF8A50; --onAccent:#16191C; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  header { position:sticky; top:0; z-index:1; background:var(--bg); border-bottom:1px solid var(--line); }
+  .bar { max-width:720px; margin:0 auto; padding:10px 16px; display:flex; flex-wrap:wrap; gap:6px; }
+  .bar button { font:inherit; font-size:13px; font-weight:600; color:var(--muted); background:var(--chip); border:0; border-radius:8px; padding:6px 11px; cursor:pointer; }
+  .bar button[aria-pressed="true"] { background:var(--accent); color:var(--onAccent); }
+  main { max-width:720px; margin:0 auto; padding:16px 16px 48px; }
+  h1 { font-size:24px; line-height:1.3; margin:16px 0 4px; }
   h2 { font-size:18px; margin:28px 0 6px; }
   p, li { font-size:15px; }
-  .muted { color:#6B7177; font-size:13px; }
-  hr { border:0; border-top:1px solid #EADBCB; margin:36px 0; }
+  a { color:var(--accent); }
+  .muted { color:var(--muted); font-size:13px; }
+  .note { color:var(--muted); font-size:13px; border-left:3px solid var(--line); padding-left:10px; }
+  hr { border:0; border-top:1px solid var(--line); margin:36px 0; }
+  .lang { display:none; }
+  .lang.on { display:block; }
+  noscript .lang, .nojs .lang { display:block; }
 </style>
 </head>
 <body>
+<header><nav class="bar" aria-label="Language"><button type="button" data-set="tr" title="Türkçe">TR</button><button type="button" data-set="en" title="English">EN</button><button type="button" data-set="es" title="Español">ES</button><button type="button" data-set="pt" title="Português">PT</button><button type="button" data-set="fr" title="Français">FR</button><button type="button" data-set="de" title="Deutsch">DE</button><button type="button" data-set="ru" title="Русский">RU</button></nav></header>
 <main>
-<h1>TurboKML – Gizlilik Politikası</h1>
+<section class="lang" lang="tr" data-lang="tr">
+<h1 id="privacy-tr">TurboKML – Gizlilik politikası</h1>
 <p class="muted">Son güncelleme: 10 Ekim 2026</p>
-<p>Bu politika, TurboKML mobil uygulamasının (Android ve iOS) verilerinizi nasıl ele aldığını açıklar. Kısaca: TurboKML kişisel verilerinizi toplamaz, saklamaz ve kimseyle paylaşmaz.</p>
+<p>Bu politika, TurboKML iPhone uygulamasının verilerinizi nasıl ele aldığını açıklar. Kısaca: TurboKML kişisel verilerinizi toplamaz, saklamaz ve kimseyle paylaşmaz.</p>
 <h2>Topladığımız veriler</h2>
 <p>Hiçbiri. Uygulamada hesap, reklam, analiz ya da takip aracı yoktur. Geliştiriciye ya da geliştiricinin herhangi bir sunucusuna hiçbir veri gönderilmez.</p>
 <h2>Telefonunuzda kullanılan veriler</h2>
@@ -33,8 +47,8 @@
 <p>TurboKML çocuklara yönelik değildir ve çocuklardan bilerek veri toplamaz.</p>
 <h2>Değişiklikler ve iletişim</h2>
 <p>Bu politika güncellenirse yeni metin, tarihiyle birlikte uygulamada ve bu sayfada yayımlanır. Sorularınız için: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
-
-<h1 id="kosullar">TurboKML – Kullanım Koşulları</h1>
+<hr>
+<h1 id="terms-tr">TurboKML – Kullanım koşulları</h1>
 <p class="muted">Son güncelleme: 10 Ekim 2026</p>
 <p>TurboKML’i indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.</p>
 <h2>Uygulamanın kullanımı</h2>
@@ -51,12 +65,11 @@
 <p>Uygulama ve bu koşullar zamanla değişebilir; güncel metin tarihiyle birlikte uygulamada yer alır.</p>
 <h2>Hukuk ve iletişim</h2>
 <p>Bu koşullara Türkiye Cumhuriyeti hukuku uygulanır; ikamet ettiğiniz ülkenin zorunlu tüketici hukuku hükümleri saklıdır. Sorularınız için: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
-
-<hr>
-
-<h1 id="en">TurboKML – Privacy Policy</h1>
+</section>
+<section class="lang" lang="en" data-lang="en">
+<h1 id="privacy-en">TurboKML – Privacy policy</h1>
 <p class="muted">Last updated: October 10, 2026</p>
-<p>This policy explains how the TurboKML mobile app (Android and iOS) handles your data. In short: TurboKML does not collect, store or share your personal data.</p>
+<p>This policy explains how the TurboKML iPhone app handles your data. In short: TurboKML does not collect, store or share your personal data.</p>
 <h2>Data we collect</h2>
 <p>None. The app has no accounts, advertising, analytics or tracking. No data is sent to the developer or to any server operated by the developer.</p>
 <h2>Data used on your phone</h2>
@@ -71,8 +84,8 @@
 <p>TurboKML is not directed at children and does not knowingly collect data from children.</p>
 <h2>Changes and contact</h2>
 <p>If this policy changes, the new version will be published in the app and on this page with its date. Questions: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
-
-<h1 id="terms">TurboKML – Terms of Use</h1>
+<hr>
+<h1 id="terms-en">TurboKML – Terms of use</h1>
 <p class="muted">Last updated: October 10, 2026</p>
 <p>By downloading or using TurboKML you agree to these terms.</p>
 <h2>Using the app</h2>
@@ -89,6 +102,225 @@
 <p>The app and these terms may change over time; the current text is available in the app with its date.</p>
 <h2>Law and contact</h2>
 <p>These terms are governed by the laws of the Republic of Türkiye, without prejudice to the mandatory consumer laws of your country of residence. Questions: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+</section>
+<section class="lang" lang="es" data-lang="es">
+<p class="note">Esta es una traducción. En caso de diferencia, prevalecen las versiones en inglés y turco.</p>
+<h1 id="privacy-es">TurboKML – Política de privacidad</h1>
+<p class="muted">Última actualización: 10 de octubre de 2026</p>
+<p>Esta política explica cómo la app TurboKML para iPhone trata tus datos. En resumen: TurboKML no recopila, almacena ni comparte tus datos personales.</p>
+<h2>Datos que recopilamos</h2>
+<p>Ninguno. La app no tiene cuentas, publicidad, analítica ni seguimiento. No se envía ningún dato al desarrollador ni a ningún servidor del desarrollador.</p>
+<h2>Datos que se usan en tu teléfono</h2>
+<ul><li>Archivos: los archivos KML/KMZ que abres y los puntos que añades se procesan y guardan solo en tu teléfono.</li><li>Ubicación: si la permites, se usa solo mientras la app está abierta, para mostrar tu posición en el mapa y para las mediciones. No se guarda ni se envía a ningún sitio.</li><li>Registro de errores: si ocurre un error, se guarda un registro breve en tu teléfono; solo se envía si decides compartirlo.</li></ul>
+<h2>Proveedores de mapas</h2>
+<p>Las imágenes del mapa se descargan de los servidores de OpenStreetMap y Esri. Como en cualquier petición por internet, estos servidores pueden ver tu dirección IP y la zona del mapa solicitada. Se aplican sus propias políticas de privacidad.</p>
+<h2>Compartir y cómo llegar</h2>
+<p>Cuando tocas Compartir o Cómo llegar, solo la información que eliges se pasa a la app que eliges (p. ej. WhatsApp, Google Maps).</p>
+<h2>Conservación y eliminación</h2>
+<p>Tus datos permanecen solo en tu teléfono. Puedes borrarlos quitando un archivo en la app o desinstalando la app. Como no guardamos ninguno de tus datos, no hace falta ninguna solicitud de eliminación aparte.</p>
+<h2>Menores</h2>
+<p>TurboKML no está dirigida a menores y no recopila a sabiendas datos de menores.</p>
+<h2>Cambios y contacto</h2>
+<p>Si esta política cambia, la nueva versión se publicará en la app y en esta página con su fecha. Preguntas: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+<hr>
+<h1 id="terms-es">TurboKML – Condiciones de uso</h1>
+<p class="muted">Última actualización: 10 de octubre de 2026</p>
+<p>Al descargar o usar TurboKML aceptas estas condiciones.</p>
+<h2>Uso de la app</h2>
+<p>TurboKML es gratuita. Puedes usarla para trabajos personales y profesionales. La app y su diseño están protegidos por derechos de autor.</p>
+<h2>Aviso importante</h2>
+<p>La información del mapa procede de los archivos que abres y de los proveedores de mapas; puede ser inexacta, estar desactualizada o incompleta. Los valores de ubicación, distancia y área son aproximados. TurboKML no es una herramienta oficial de topografía ni de navegación. No tomes decisiones de excavación, de campo o de seguridad basándote solo en esta app; apóyate en los registros oficiales y en comprobaciones sobre el terreno.</p>
+<h2>Tus responsabilidades</h2>
+<p>Eres responsable de los archivos que abres y compartes. Usa solo archivos que tengas derecho a usar y cumple las leyes de tu país.</p>
+<h2>Proveedores de mapas</h2>
+<p>Las imágenes del mapa las proporcionan © colaboradores de OpenStreetMap y Esri; se aplican sus propias condiciones.</p>
+<h2>Garantía y responsabilidad</h2>
+<p>La app se ofrece “tal cual”. En la medida en que lo permita la ley, el desarrollador no es responsable de los daños derivados de su uso. Estas condiciones no afectan a los derechos del consumidor que no pueden limitarse según las leyes de tu país.</p>
+<h2>Cambios</h2>
+<p>La app y estas condiciones pueden cambiar con el tiempo; el texto vigente está disponible en la app con su fecha.</p>
+<h2>Legislación y contacto</h2>
+<p>Estas condiciones se rigen por las leyes de la República de Turquía, sin perjuicio de las leyes de consumo obligatorias de tu país de residencia. Preguntas: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+</section>
+<section class="lang" lang="pt" data-lang="pt">
+<p class="note">Esta é uma tradução. Em caso de diferença, prevalecem as versões em inglês e turco.</p>
+<h1 id="privacy-pt">TurboKML – Política de privacidade</h1>
+<p class="muted">Última atualização: 10 de outubro de 2026</p>
+<p>Esta política explica como o app TurboKML para iPhone trata seus dados. Em resumo: o TurboKML não coleta, armazena nem compartilha seus dados pessoais.</p>
+<h2>Dados que coletamos</h2>
+<p>Nenhum. O app não tem contas, publicidade, análises nem rastreamento. Nenhum dado é enviado ao desenvolvedor nem a qualquer servidor do desenvolvedor.</p>
+<h2>Dados usados no seu celular</h2>
+<ul><li>Arquivos: os arquivos KML/KMZ que você abre e os pontos que adiciona são processados e guardados só no seu celular.</li><li>Localização: se você permitir, ela é usada só enquanto o app está aberto, para mostrar sua posição no mapa e para medições. Não é guardada nem enviada a lugar nenhum.</li><li>Registro de erros: se ocorrer um erro, um registro curto fica no seu celular; ele só é enviado se você decidir compartilhá-lo.</li></ul>
+<h2>Provedores de mapas</h2>
+<p>As imagens do mapa são baixadas dos servidores do OpenStreetMap e da Esri. Como em qualquer acesso à internet, esses servidores podem ver seu endereço IP e a área do mapa solicitada. Valem as políticas de privacidade deles.</p>
+<h2>Compartilhamento e rotas</h2>
+<p>Ao tocar em Compartilhar ou Rotas, só a informação escolhida é passada ao app que você escolher (ex.: WhatsApp, Google Maps).</p>
+<h2>Armazenamento e exclusão</h2>
+<p>Seus dados ficam só no seu celular. Você pode apagá-los removendo um arquivo no app ou desinstalando o app. Como não guardamos nenhum dado seu, não é preciso pedir a exclusão separadamente.</p>
+<h2>Crianças</h2>
+<p>O TurboKML não é destinado a crianças e não coleta intencionalmente dados de crianças.</p>
+<h2>Alterações e contato</h2>
+<p>Se esta política mudar, a nova versão será publicada no app e nesta página com a data. Dúvidas: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+<hr>
+<h1 id="terms-pt">TurboKML – Termos de uso</h1>
+<p class="muted">Última atualização: 10 de outubro de 2026</p>
+<p>Ao baixar ou usar o TurboKML, você concorda com estes termos.</p>
+<h2>Uso do app</h2>
+<p>O TurboKML é gratuito. Você pode usá-lo em trabalhos pessoais e profissionais. O app e seu design são protegidos por direitos autorais.</p>
+<h2>Aviso importante</h2>
+<p>As informações do mapa vêm dos arquivos que você abre e dos provedores de mapas; podem estar imprecisas, desatualizadas ou incompletas. Os valores de localização, distância e área são aproximados. O TurboKML não é uma ferramenta oficial de topografia ou navegação. Não tome decisões de escavação, de campo ou de segurança só com base neste app; use registros oficiais e verificações no local.</p>
+<h2>Suas responsabilidades</h2>
+<p>Você é responsável pelos arquivos que abre e compartilha. Use só arquivos que tenha direito de usar e siga as leis do seu país.</p>
+<h2>Provedores de mapas</h2>
+<p>As imagens do mapa são fornecidas por © colaboradores do OpenStreetMap e Esri; valem os termos deles.</p>
+<h2>Garantia e responsabilidade</h2>
+<p>O app é oferecido “no estado em que se encontra”. Na medida permitida por lei, o desenvolvedor não se responsabiliza por danos decorrentes do seu uso. Estes termos não afetam os direitos do consumidor que não podem ser limitados pelas leis do seu país.</p>
+<h2>Alterações</h2>
+<p>O app e estes termos podem mudar com o tempo; o texto atual fica disponível no app com a data.</p>
+<h2>Legislação e contato</h2>
+<p>Estes termos são regidos pelas leis da República da Turquia, sem prejuízo das leis obrigatórias de defesa do consumidor do seu país de residência. Dúvidas: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+</section>
+<section class="lang" lang="fr" data-lang="fr">
+<p class="note">Ceci est une traduction. En cas de différence, les versions anglaise et turque font foi.</p>
+<h1 id="privacy-fr">TurboKML – Politique de confidentialité</h1>
+<p class="muted">Dernière mise à jour : 10 octobre 2026</p>
+<p>Cette politique explique comment l’app TurboKML pour iPhone traite vos données. En bref : TurboKML ne collecte, ne stocke ni ne partage vos données personnelles.</p>
+<h2>Données collectées</h2>
+<p>Aucune. L’app n’a ni compte, ni publicité, ni statistiques, ni suivi. Aucune donnée n’est envoyée au développeur ni à un serveur exploité par le développeur.</p>
+<h2>Données utilisées sur votre téléphone</h2>
+<ul><li>Fichiers : les fichiers KML/KMZ que vous ouvrez et les points que vous ajoutez sont traités et stockés uniquement sur votre téléphone.</li><li>Position : si vous l’autorisez, elle n’est utilisée que lorsque l’app est ouverte, pour afficher votre position sur la carte et pour les mesures. Elle n’est ni stockée ni envoyée.</li><li>Journal des erreurs : en cas d’erreur, un court journal est conservé sur votre téléphone ; il n’est envoyé que si vous choisissez de le partager.</li></ul>
+<h2>Fournisseurs de cartes</h2>
+<p>Les images de carte sont téléchargées depuis les serveurs d’OpenStreetMap et d’Esri. Comme pour toute requête internet, ces serveurs peuvent voir votre adresse IP et la zone de carte demandée. Leurs propres politiques de confidentialité s’appliquent.</p>
+<h2>Partage et itinéraire</h2>
+<p>Lorsque vous touchez Partager ou Itinéraire, seule l’information choisie est transmise à l’app que vous choisissez (ex. WhatsApp, Google Maps).</p>
+<h2>Conservation et suppression</h2>
+<p>Vos données restent uniquement sur votre téléphone. Vous pouvez les supprimer en retirant un fichier dans l’app ou en désinstallant l’app. Comme nous ne détenons aucune de vos données, aucune demande de suppression séparée n’est nécessaire.</p>
+<h2>Enfants</h2>
+<p>TurboKML ne s’adresse pas aux enfants et ne collecte pas sciemment de données d’enfants.</p>
+<h2>Modifications et contact</h2>
+<p>Si cette politique change, la nouvelle version sera publiée dans l’app et sur cette page avec sa date. Questions : <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+<hr>
+<h1 id="terms-fr">TurboKML – Conditions d’utilisation</h1>
+<p class="muted">Dernière mise à jour : 10 octobre 2026</p>
+<p>En téléchargeant ou en utilisant TurboKML, vous acceptez ces conditions.</p>
+<h2>Utilisation de l’app</h2>
+<p>TurboKML est gratuite. Vous pouvez l’utiliser pour un usage personnel et professionnel. L’app et son design sont protégés par le droit d’auteur.</p>
+<h2>Avertissement important</h2>
+<p>Les informations de la carte proviennent des fichiers que vous ouvrez et des fournisseurs de cartes ; elles peuvent être inexactes, obsolètes ou incomplètes. Les valeurs de position, de distance et de surface sont approximatives. TurboKML n’est pas un outil officiel de topographie ou de navigation. Ne prenez pas de décision de fouille, de terrain ou de sécurité sur la seule base de cette app ; fiez-vous aux registres officiels et aux vérifications sur place.</p>
+<h2>Vos responsabilités</h2>
+<p>Vous êtes responsable des fichiers que vous ouvrez et partagez. N’utilisez que des fichiers que vous avez le droit d’utiliser et respectez les lois de votre pays.</p>
+<h2>Fournisseurs de cartes</h2>
+<p>Les images de carte sont fournies par © les contributeurs d’OpenStreetMap et Esri ; leurs propres conditions s’appliquent.</p>
+<h2>Garantie et responsabilité</h2>
+<p>L’app est fournie « en l’état ». Dans la mesure permise par la loi, le développeur n’est pas responsable des dommages résultant de son utilisation. Ces conditions n’affectent pas les droits des consommateurs qui ne peuvent être limités selon les lois de votre pays.</p>
+<h2>Modifications</h2>
+<p>L’app et ces conditions peuvent évoluer ; le texte en vigueur est disponible dans l’app avec sa date.</p>
+<h2>Droit applicable et contact</h2>
+<p>Ces conditions sont régies par le droit de la République de Turquie, sans préjudice des lois impératives de protection des consommateurs de votre pays de résidence. Questions : <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+</section>
+<section class="lang" lang="de" data-lang="de">
+<p class="note">Dies ist eine Übersetzung. Bei Abweichungen gelten die englische und die türkische Fassung.</p>
+<h1 id="privacy-de">TurboKML – Datenschutzerklärung</h1>
+<p class="muted">Zuletzt aktualisiert: 10. Oktober 2026</p>
+<p>Diese Erklärung beschreibt, wie die TurboKML-App für iPhone mit deinen Daten umgeht. Kurz gesagt: TurboKML erhebt, speichert und teilt keine personenbezogenen Daten.</p>
+<h2>Welche Daten wir erheben</h2>
+<p>Keine. Die App hat keine Konten, keine Werbung, keine Analyse und kein Tracking. Es werden keine Daten an den Entwickler oder an Server des Entwicklers gesendet.</p>
+<h2>Daten auf deinem Telefon</h2>
+<ul><li>Dateien: KML/KMZ-Dateien, die du öffnest, und Punkte, die du hinzufügst, werden nur auf deinem Telefon verarbeitet und gespeichert.</li><li>Standort: Wenn du es erlaubst, wird er nur bei geöffneter App verwendet, um deine Position auf der Karte zu zeigen und für Messungen. Er wird weder gespeichert noch irgendwohin gesendet.</li><li>Fehlerprotokoll: Tritt ein Fehler auf, wird ein kurzes Protokoll auf deinem Telefon gespeichert; es wird nur gesendet, wenn du es teilst.</li></ul>
+<h2>Kartenanbieter</h2>
+<p>Kartenbilder werden von Servern von OpenStreetMap und Esri geladen. Wie bei jeder Internetanfrage können diese Server deine IP-Adresse und den angefragten Kartenausschnitt sehen. Es gelten deren eigene Datenschutzerklärungen.</p>
+<h2>Teilen und Route</h2>
+<p>Wenn du auf Teilen oder Route tippst, wird nur die gewählte Information an die gewählte App übergeben (z. B. WhatsApp, Google Maps).</p>
+<h2>Speicherung und Löschung</h2>
+<p>Deine Daten bleiben nur auf deinem Telefon. Du kannst sie löschen, indem du eine Datei in der App entfernst oder die App deinstallierst. Da wir keine deiner Daten speichern, ist keine gesonderte Löschanfrage nötig.</p>
+<h2>Kinder</h2>
+<p>TurboKML richtet sich nicht an Kinder und erhebt nicht wissentlich Daten von Kindern.</p>
+<h2>Änderungen und Kontakt</h2>
+<p>Ändert sich diese Erklärung, wird die neue Fassung mit Datum in der App und auf dieser Seite veröffentlicht. Fragen: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+<hr>
+<h1 id="terms-de">TurboKML – Nutzungsbedingungen</h1>
+<p class="muted">Zuletzt aktualisiert: 10. Oktober 2026</p>
+<p>Mit dem Herunterladen oder der Nutzung von TurboKML stimmst du diesen Bedingungen zu.</p>
+<h2>Nutzung der App</h2>
+<p>TurboKML ist kostenlos. Du darfst die App privat und beruflich nutzen. Die App und ihr Design sind urheberrechtlich geschützt.</p>
+<h2>Wichtiger Hinweis</h2>
+<p>Die Informationen auf der Karte stammen aus den geöffneten Dateien und von Kartenanbietern; sie können ungenau, veraltet oder unvollständig sein. Standort-, Entfernungs- und Flächenwerte sind Näherungswerte. TurboKML ist kein amtliches Vermessungs- oder Navigationswerkzeug. Triff keine Entscheidungen zu Grabungen, Feldarbeit oder Sicherheit allein auf Grundlage dieser App; verlasse dich auf amtliche Unterlagen und Prüfungen vor Ort.</p>
+<h2>Deine Verantwortung</h2>
+<p>Du bist für die Dateien verantwortlich, die du öffnest und teilst. Verwende nur Dateien, zu deren Nutzung du berechtigt bist, und halte die Gesetze deines Landes ein.</p>
+<h2>Kartenanbieter</h2>
+<p>Kartenbilder werden von © OpenStreetMap-Mitwirkenden und Esri bereitgestellt; es gelten deren eigene Bedingungen.</p>
+<h2>Gewährleistung und Haftung</h2>
+<p>Die App wird „wie besehen“ bereitgestellt. Soweit gesetzlich zulässig, haftet der Entwickler nicht für Schäden aus ihrer Nutzung. Diese Bedingungen lassen Verbraucherrechte unberührt, die nach den Gesetzen deines Landes nicht eingeschränkt werden können.</p>
+<h2>Änderungen</h2>
+<p>Die App und diese Bedingungen können sich mit der Zeit ändern; der aktuelle Text ist mit Datum in der App verfügbar.</p>
+<h2>Recht und Kontakt</h2>
+<p>Für diese Bedingungen gilt das Recht der Republik Türkei, unbeschadet zwingender Verbraucherschutzgesetze deines Wohnsitzlandes. Fragen: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+</section>
+<section class="lang" lang="ru" data-lang="ru">
+<p class="note">Это перевод. При расхождениях действуют английская и турецкая версии.</p>
+<h1 id="privacy-ru">TurboKML – Политика конфиденциальности</h1>
+<p class="muted">Последнее обновление: 10 октября 2026 г.</p>
+<p>Эта политика объясняет, как приложение TurboKML для iPhone обращается с вашими данными. Кратко: TurboKML не собирает, не хранит и не передаёт ваши персональные данные.</p>
+<h2>Какие данные мы собираем</h2>
+<p>Никаких. В приложении нет учётных записей, рекламы, аналитики и отслеживания. Никакие данные не отправляются разработчику или на серверы разработчика.</p>
+<h2>Данные на вашем телефоне</h2>
+<ul><li>Файлы: открываемые файлы KML/KMZ и добавленные точки обрабатываются и хранятся только на вашем телефоне.</li><li>Геопозиция: если вы разрешите, она используется только пока приложение открыто — чтобы показать ваше положение на карте и для измерений. Она нигде не сохраняется и никуда не отправляется.</li><li>Журнал ошибок: при ошибке на телефоне сохраняется короткий журнал; он отправляется, только если вы сами решите им поделиться.</li></ul>
+<h2>Поставщики карт</h2>
+<p>Изображения карты загружаются с серверов OpenStreetMap и Esri. Как и при любом запросе в интернете, эти серверы видят ваш IP-адрес и запрошенный участок карты. Действуют их собственные политики конфиденциальности.</p>
+<h2>«Поделиться» и маршрут</h2>
+<p>Когда вы нажимаете «Поделиться» или «Маршрут», в выбранное вами приложение (напр. WhatsApp, Google Карты) передаются только выбранные сведения.</p>
+<h2>Хранение и удаление</h2>
+<p>Ваши данные остаются только на телефоне. Удалить их можно, убрав файл в приложении или удалив приложение. Поскольку у нас нет ваших данных, отдельный запрос на удаление не нужен.</p>
+<h2>Дети</h2>
+<p>TurboKML не предназначено для детей и сознательно не собирает данные детей.</p>
+<h2>Изменения и контакты</h2>
+<p>Если эта политика изменится, новая редакция с датой будет опубликована в приложении и на этой странице. Вопросы: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+<hr>
+<h1 id="terms-ru">TurboKML – Условия использования</h1>
+<p class="muted">Последнее обновление: 10 октября 2026 г.</p>
+<p>Скачивая или используя TurboKML, вы соглашаетесь с этими условиями.</p>
+<h2>Использование приложения</h2>
+<p>TurboKML бесплатно. Его можно использовать для личных и рабочих задач. Приложение и его дизайн защищены авторским правом.</p>
+<h2>Важное предупреждение</h2>
+<p>Сведения на карте берутся из открываемых файлов и от поставщиков карт; они могут быть неточными, устаревшими или неполными. Значения местоположения, расстояния и площади приблизительны. TurboKML не является официальным инструментом для геодезии или навигации. Не принимайте решений о земляных и полевых работах или о безопасности только на основе этого приложения; опирайтесь на официальные данные и проверку на месте.</p>
+<h2>Ваша ответственность</h2>
+<p>Вы отвечаете за файлы, которые открываете и которыми делитесь. Используйте только файлы, на которые у вас есть права, и соблюдайте законы своей страны.</p>
+<h2>Поставщики карт</h2>
+<p>Изображения карты предоставляют © участники OpenStreetMap и Esri; действуют их собственные условия.</p>
+<h2>Гарантии и ответственность</h2>
+<p>Приложение предоставляется «как есть». В пределах, допускаемых законом, разработчик не несёт ответственности за ущерб от его использования. Эти условия не затрагивают права потребителей, которые не могут быть ограничены по законам вашей страны.</p>
+<h2>Изменения</h2>
+<p>Приложение и эти условия могут со временем меняться; действующий текст с датой доступен в приложении.</p>
+<h2>Право и контакты</h2>
+<p>Эти условия регулируются законодательством Турецкой Республики без ущерба для обязательных норм о защите прав потребителей страны вашего проживания. Вопросы: <a href="mailto:ahmet.basogul@icloud.com">ahmet.basogul@icloud.com</a></p>
+</section>
 </main>
+<script>
+(function () {
+  var ids = ["tr","en","es","pt","fr","de","ru"];
+  function pick() {
+    var q = (location.hash || '').replace('#', '').slice(0, 2);
+    if (ids.indexOf(q) >= 0) return q;
+    var n = (navigator.languages || [navigator.language || 'en']);
+    for (var i = 0; i < n.length; i++) { var c = String(n[i]).slice(0, 2).toLowerCase(); if (ids.indexOf(c) >= 0) return c; }
+    return 'en';
+  }
+  function show(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('.lang').forEach(function (s) { s.classList.toggle('on', s.getAttribute('data-lang') === l); });
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-set') === l ? 'true' : 'false'); });
+  }
+  document.querySelectorAll('[data-set]').forEach(function (b) {
+    b.addEventListener('click', function () { var l = b.getAttribute('data-set'); history.replaceState(null, '', '#' + l); show(l); window.scrollTo(0, 0); });
+  });
+  var cur = pick();
+  show(cur);
+  // Eski bağlantılar: #kosullar / #terms → seçili dildeki kullanım koşulları
+  var h = (location.hash || '').replace('#', '');
+  if (h === 'kosullar' || h === 'terms') {
+    var el = document.getElementById('terms-' + cur);
+    if (el) el.scrollIntoView();
+  }
+})();
+</script>
 </body>
 </html>
